@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste</title>
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="/css/stylehome.css">
 </head>
 <body>
-    <h1>ola mundo</h1>
+    <h1>Sorteador</h1>
+
+    <label for="numero_inicial">Número Inicial:</label>
+
+    <input type="number" id="numero_inicial" value="1">
+
+    <br>
+
+    <label for="numero_final">Número Final:</label>
+
+    <input type="number" id="numero_final" value="100">
+
+    <br>
+
+    <button onclick="sortear()">Sortear</button>
+
+    <p id="resultado"></p>
+
+
+    <script src="/js/index.js"></script>
 </body>
 </html>
