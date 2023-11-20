@@ -15,9 +15,12 @@ function sortear() {
 
     var resultados = [];
 
-    for (var i = 0; i < quantidadeResultados; i++) {
+    while (resultados.length < quantidadeResultados) {
         var numeroSorteado = Math.floor(Math.random() * (numeroFinal - numeroInicial + 1)) + numeroInicial;
-        resultados.push(numeroSorteado);
+
+        if (!resultados.includes(numeroSorteado)) {
+            resultados.push(numeroSorteado);
+        }
     }
 
     var resultadoDiv = document.getElementById("resultado");
