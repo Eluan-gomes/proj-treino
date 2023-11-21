@@ -1,0 +1,93 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: radial-gradient(ellipse at center, rgba(69,72,77,1) 0%, blue 100%);
+}
+
+.cont {
+    width: 300px;
+    /* Defina a largura desejada para a sua div */
+    height: 400px;
+    /* Defina a altura desejada para a sua div */
+    background-color: rgba(64, 64, 212, 0.105);
+    /* Cor de fundo da sua div */
+    border: 1px transparent;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    padding: 20px;
+    
+}
+input{
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    height: 20px;
+    width: 250px;
+    color: #000b52;
+    background-color: rgb(104, 104, 255);
+    border: dashed blanchedalmond;
+}
+label{
+    margin-bottom: 3px;
+    padding-bottom: 3px;
+    height: auto;
+    text-align: start;
+    color: rgb(174, 174, 174);
+}
+.button{
+    padding: 7px;
+    margin-top: 25px;
+    font-size: medium;
+}
+.title{
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-shadow: #000b52 0.3em 0.3em 0.8em;
+    color: rgb(174, 174, 174);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(99, 99, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #000b52;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }

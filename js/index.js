@@ -42,3 +42,25 @@ function sortear() {
     downloadLink.download = "resultados.pdf";
     downloadLink.click();
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    var openBtn = document.getElementById('openBtn');
+    var closeBtn = document.getElementById('closeBtn');
+    var popup = document.getElementById('popup');
+  
+    openBtn.addEventListener('click', function () {
+      popup.style.display = 'block';
+    });
+  
+    closeBtn.addEventListener('click', function () {
+      popup.style.display = 'none';
+    });
+  
+    // Fechar o pop-up se clicar fora da área do conteúdo
+    window.addEventListener('click', function (event) {
+      if (event.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+  });
+  
